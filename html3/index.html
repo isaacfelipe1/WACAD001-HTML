@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantic Structure with Exact Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column; 
+            min-height: 100vh; 
+            background-color: #f0f0f0; /
+        }
+
+        header, nav, aside, main, article, figure, p, section, footer {
+            padding: 15px; 
+            box-sizing: border-box; 
+            text-align: center;
+            font-weight: bold; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px; 
+        }
+
+        header {
+            background-color: #ff8f9d; 
+        }
+
+        nav {
+            background-color: #79d7bd; 
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-grow: 1; 
+            gap: 10px; 
+            margin-bottom: 10px;
+        }
+
+        aside {
+            background-color: #ffd1dc; 
+            flex-basis: 30%; 
+            min-height: 300px; 
+        }
+
+        main {
+            background-color: #bdedfd; 
+            flex-basis: 70%; 
+            display: flex;
+            flex-direction: column; 
+            gap: 10px;
+        }
+
+        article {
+            background-color: #ffffba; 
+            display: flex;
+            flex-direction: column; 
+            gap: 10px; 
+            flex-grow: 1; 
+        }
+
+        figure {
+            background-color: #fdf59c; 
+            flex-grow: 1; 
+        }
+
+        article > p { 
+            background-color: #fdf59c; 
+            flex-grow: 1; 
+            margin-bottom: 0; 
+        }
+
+        section {
+            background-color: #64b5f6;
+            color: white; 
+            flex-shrink: 0; 
+        }
+
+        footer {
+            background-color: #c471ed; 
+            color: white; 
+            margin-top: auto; 
+        
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        &lt;header&gt;
+    </header>
+
+    <nav>
+        &lt;nav&gt;
+    </nav>
+
+    <div class="content-wrapper">
+        <aside>
+            &lt;aside&gt;
+        </aside>
+
+        <main>
+            &lt;main&gt;
+            <article>
+                &lt;article&gt;
+                <figure>
+                    &lt;figure&gt;
+                </figure>
+                <p>
+                    &lt;p&gt;
+                </p>
+            </article>
+            <section>
+                &lt;section&gt;
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        &lt;footer&gt;
+    </footer>
+
+</body>
+</html>
